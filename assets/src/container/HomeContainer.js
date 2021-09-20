@@ -3,9 +3,9 @@ import Home from "../components/Home";
 import {addToCard} from '../services/Actions/actions'
 
  const mapDispatchToProps=dispatch=>{
-     addtocardHandler:data=>dispatch(addToCard(data))
+     addToCardHandler:data=>dispatch(addToCard(data))
  },
  const mapStateToProps=state=>{
-
+     cardData:state.data
  }
  export default(mapStateToProps,mapDispatchToProps)(Home)

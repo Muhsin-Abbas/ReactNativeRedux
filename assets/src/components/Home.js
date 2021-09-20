@@ -1,7 +1,8 @@
 import React from 'react'
 import { View, Text, Image,StyleSheet,Button } from 'react-native'
 
-export default function Home() {
+export default function Home(props) {
+  console.warn('props',props)
     return (
         <View style={styles.container}>
           <View style={styles.Addcard}>
@@ -22,7 +23,7 @@ export default function Home() {
                   <Text>price:$1999</Text>
                 </View>
                 <View style={{marginTop:10,}}>
-                  <Button title='Add to cart' style={{fontSize:20}}/>
+                  <Button onClick={()=>{props.addToCardHandler({price:1000,name:'I phone 11 '})}} title='Add to cart' style={{fontSize:20}}/>
                 </View>
             </View>
         </View>

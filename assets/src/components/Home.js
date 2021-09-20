@@ -21,8 +21,8 @@ export default function Home() {
                   <Text>I-phone</Text>
                   <Text>price:$1999</Text>
                 </View>
-                <View style={{marginTop:10,borderRadius:10,boxShadow:'black'}}>
-                  <Button title='Add to cart'/>
+                <View style={{marginTop:10,}}>
+                  <Button title='Add to cart' style={{fontSize:20}}/>
                 </View>
             </View>
         </View>
